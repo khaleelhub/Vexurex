@@ -3,6 +3,7 @@
     border-radius: 6px;
     margin-top: 100px;
     margin-bottom: 30px;
+    color: white;
 }
 .box {
     background: #030303dd;
@@ -69,7 +70,7 @@
 
 .made {
     position: absolute;
-    left: 30px;
+    left: 70px;
     margin-top: 60px;
 }
 
