@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Vexurex Text with typing + blink + pulse animations */
+.Vexurex {
+  margin-top:200px;
+  font-size: 110px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgb(243, 243, 243);
+  animation: typing 4s steps(30, end) forwards, blink 0.9s step-end infinite, pulse 1s infinite;
+  width: fit-content;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(255, 255, 255) }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    border-bottom-color: #007bff;
+  }
+  50% {
+    border-bottom-color: #ff4081;
+  }
+}
+
+.Vexurex:hover {
+  letter-spacing: 1px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.Z {
+  color: rgb(0, 196, 81);
+  font-weight: bold;
+  font-size: 200px;
+}
+
+/* Triangle Animation */
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #00be49;
+  animation: bounce 1s infinite, pulse 5s infinite;
+  margin-left: 300px;
+  margin-top: 10px;
+  transform: translateX(300deg);
+  display: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.discriptionsText {
+  padding: 10px;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+  position: relative;
+  left: 10px;
+  top: 160px;
+  border: 3px solid;
+  background: #f2f2f2de;
+  cursor: pointer;
+}
+
+.h5 {
+  color: #000;
+  height: 400px;
+}
+
+.longLine {
+  width: 400px;
+  background: #00be49;
+  height: 5px;
+  display: none;
+}
+
+.zBox {
+  padding: 60px 0;
+}
+
+.v-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  position: relative;
+  top: 170px;
+  
+}
+
+.vx-wrapper {
+  position: relative;
+  padding: 40px 80px;
+  border-radius: 40px;
+  background: #f2f2f2;
+  box-shadow:
+    20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff,
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.6);
+  transition: all 0.4s ease;
+  animation: float 3s ease-in-out infinite;
+  cursor: pointer;
+}
+
+.vx-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow:
+    inset 12px 12px 24px rgba(0, 0, 0, 0.2),
+    inset -12px -12px 24px rgba(255, 255, 255, 0.6),
+    0 0 40px rgba(0, 255, 13, 0.4);
+}
+
+.v-letter,
+.x-letter {
+  position: absolute;
+  font-size: 240px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: rgb(22, 224, 0);
+  text-shadow:
+    0 0 10px rgba(22, 224, 0, 0.7),
+    0 0 20px rgba(22, 224, 0, 0.4);
+  pointer-events: none;
+  user-select: none;
+}
+
+.v-letter {
+  left: 0;
+  transform: translateX(-40px);
+}
+
+.x-letter {
+  right: 0;
+  transform: translateX(40px) rotateZ(6deg);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Font Sizes and Layout */
+@media (max-width: 1024px) {
+  .Vexurex {
+    font-size: 140px;
+  }
+
+  .Z {
+    font-size: 180px;
+  }
+
+  .v-letter {
+    font-size: 160px;
+  }
+  .x-letter {
+  font-size: 160px;
+  /* font-family: 'Orbitron', sans-serif; */
+
+}
+}
+
+@media (max-width: 768px) {
+  .Vexurex {
+    font-size: 100px;
+    margin-top:300px;
+  }
+   .x-letter {
+  font-size: 160px;
+  /* font-family: 'Orbitron', sans-serif; */
+
+}
+
+  .Z {
+    font-size: 90px;
+  }
+
+  .v-letter {
+    font-size: 120px;
+  }
+
+  .discriptionsText {
+    width: 90%;
+    left: 0;
+    top: 100px;
+    height: auto;
+  }
+
+  .longLine {
+    width: 90%;
+  }
+
+  .zBox {
+    margin-top: 200px;
+  }
+
+  .v-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+.one {
+  height: 300px;
+  background: #ffffff;
+  width: 6px;
+  position: absolute;
+  left: 20px;
+  top: -1px;
+  border-radius: 10px;
+}
+.two {
+  height: 260px;
+  background: #ffffff;
+  width: 6px;
+  position: absolute;
+  left: 80px;
+  top: -1px;
+  border-radius: 10px;
+  box-shadow: 9px 9px 30px #000;
+}
+.three {
+  height: 180px;
+  background: #ffffff;
+  width: 6px;
+  position: absolute;
+  left: 140px;
+  top: -1px;
+  
+  border-radius: 10px;
+}
+}
+@media (max-width: 360px) {
+  .Vexurex {
+    font-size: 60px;
+    margin-top: 200px;
+  }
+
+  .Z {
+    font-size: 70px;
+  }
+
+  .v-letter {
+    font-size: 90px;
+    padding: 10px 20px;
+  }
+
+  .discriptionsText {
+    top: 80px;
+    padding: 8px;
+  }
+
+  .zBox {
+    margin-top: 150px;
+  }
+   .x-letter {
+  font-size: 160px;
+  /* font-family: 'Orbitron', sans-serif; */
+
+}
+
+}
+@media (max-width: 480px) {
+  .Vexurex {
+    font-size: 60px;
+    margin-top: 150px;
+  }
+
+  .Z {
+    font-size: 70px;
+  }
+
+  .v-letter {
+    font-size: 80px;
+    padding: 10px 20px;
+  }
+
+  .discriptionsText {
+    top: 80px;
+    padding: 8px;
+  }
+
+  .zBox {
+    margin-top: 150px;
+  }
+  .triangle {
+  display: none;
+   width: 0;
+   height: 0;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   border-bottom: 50px solid #00be49;
+   animation: bounce 1s infinite, pulse 5s infinite;
+   margin-left: 60px;
+   margin-top: 10px;
+   transform: translateX(300deg);
+}
+
+.App {
+  background-color: black;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.one {
+  height: 250px;
+  background: #ffffff;
+  width: 6px;
+  position: absolute;
+  left: 20px;
+  top: -1px;
+  border-radius: 10px;
+}
+.two {
+  height: 210px;
+  background: #ffffff;
+  width: 6px;
+  position: absolute;
+  left: 70px;
+  top: -1px;
+  border-radius: 10px;
+  box-shadow: 9px 9px 30px #000;
+}
+.three {
+  height: 120px;
+  background: #ffffff;
+  width: 6px;
+  position: absolute;
+  left: 120px;
+  top: -1px;
+  
+  border-radius: 10px;
+}
+ .x-letter {
+  font-size: 160px;
+  /* font-family: 'Orbitron', sans-serif; */
+
+}
+}
+
+.main-one {
+  padding: 20px;
+  gap: 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,84 @@
+.Container {
+    background: #030303bd;
+    border-radius: 6px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.box {
+    background: #030303dd;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+.box:hover {
+    box-shadow: 5px 5px 10px rgba(19, 19, 19, 0.928),
+    -5px -5px 10px rgba(19, 19, 19, 0.928);
+}
+.V {
+    font-weight: bold;
+    text-shadow: 5px 5px 10px rgba(19, 19, 19, 0.928),
+    -5px -5px 10px rgba(19, 19, 19, 0.928);
+    cursor: pointer;
+    transition-duration: 2s;
+}
+
+.V:hover {
+    color: rgb(9, 240, 39);
+}
+
+.text {
+    position: relative;
+    bottom: 100px;
+    left: 90px;
+    background: rgba(5, 5, 5, 0.815);
+    height: 34px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 26px;
+    box-shadow: inset 10px 10px 20px rgba(8, 39, 10, 0.793),
+    inset -10px -10px 20px rgba(5, 5, 5, 0.815);
+}
+
+.lines {
+    height: 2px;
+    width: 90%;
+    position: relative;
+    background: #fff;
+    bottom: 15px;
+    left: 80px;
+}
+
+.icoins {
+    position: relative;
+    top: -150px;
+    left: 450px;
+}
+
+.made {
+    position: absolute;
+    left: 30px;
+    margin-top: 60px;
+}
+
+
+@media (max-width: 1024px) {
+    .made {
+    position: absolute;
+    left: 30px;
+    top: 280px;
+}
+
+}

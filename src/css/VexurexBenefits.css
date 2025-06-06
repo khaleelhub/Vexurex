@@ -1,0 +1,163 @@
+/* src/components/ZenthiumBenefits.css */
+
+:root {
+  --primary-color: #00be49;
+  --bg-light: #f5f7fa;
+  --bg-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --text-dark: #fff;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.08);
+  --hover-shadow: rgba(0, 0, 0, 0.12);
+}
+
+/* Main Section Container */
+.benefits-section {
+  padding: 4rem 1rem;
+  background: var(--bg-light);
+  text-align: center;
+  transition: background 0.3s ease;
+  z-index: -10px;
+  border-radius: 10px;
+  margin-top: 370px;
+}
+
+/* Title Styling */
+.benefits-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* Grid Layout */
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Card Container */
+.benefit-card {
+  background-color: var(--card-bg);
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  width: 280px;
+  max-width: 90vw;
+  box-shadow: 0 10px 25px var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+/* Hover & Focus Effects */
+.benefit-card:hover,
+.benefit-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px var(--hover-shadow);
+}
+
+/* Emoji Icon */
+.benefit-icon {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Icon Hover Effect */
+.benefit-card:hover .benefit-icon {
+  transform: scale(1.2) rotate(4deg);
+}
+
+/* Heading */
+.benefit-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+/* Description */
+.benefit-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 240px;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .benefits-grid {
+    gap: 1.5rem;
+  }
+
+  .benefit-card {
+    width: 240px;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .benefits-title {
+    font-size: 2.2rem;
+  }
+
+  .benefit-card {
+    width: 90%;
+  }
+}
+
+/* Dark Mode (optional) */
+@media (prefers-color-scheme: dark) {
+  .benefits-section {
+    background: var(--bg-dark);
+  }
+
+  .benefit-card {
+    background-color: #222;
+    color: var(--text-light);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .benefit-card h3,
+  .benefit-card p {
+    color: var(--text-light);
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .benefit-card {
+    animation: none;
+    transition: none;
+  }
+
+  .benefit-icon {
+    transition: none;
+  }
+}

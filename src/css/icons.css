@@ -1,0 +1,33 @@
+.list {
+    display: flex;
+
+}
+.Icons-benefit {
+    gap: 10px;
+}
+.benefit {
+    margin-left: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .list {
+    display: grid;
+
+}
+.Icons-benefit {
+    gap: 10px;
+}
+.benefit {
+    cursor: pointer;
+    position: relative;
+    left: -400px;
+}  
+.title {
+    position: relative;
+    text-align: center;
+    left: -350px;
+}
+}
+
+
