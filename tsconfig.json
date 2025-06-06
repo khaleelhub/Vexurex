@@ -1,7 +1,10 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "jsx": "react-jsx",        // ✅ This is correct for modern React (17+)
+    "module": "ESNext",
+    "target": "ES2020",
+    "moduleResolution": "Node",
+    "types": ["node"]
+  },
+  "include": ["src"]
 }
