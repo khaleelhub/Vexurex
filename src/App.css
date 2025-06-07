@@ -117,7 +117,7 @@
   height: auto;
   position: relative;
   top: 170px;
-  
+
 }
 
 .vx-wrapper {
@@ -159,12 +159,12 @@
 
 .v-letter {
   left: 0;
-  transform: translateX(-40px);
+  transform: translateX(-13px);
 }
 
 .x-letter {
   right: 0;
-  transform: translateX(40px) rotateZ(6deg);
+  transform: translateX(9px) rotateZ(9deg);
 }
 
 @keyframes float {
@@ -186,14 +186,30 @@
     font-size: 180px;
   }
 
-  .v-letter {
-    font-size: 160px;
-  }
-  .x-letter {
+.v-letter,
+.x-letter {
+  position: absolute;
   font-size: 160px;
-  /* font-family: 'Orbitron', sans-serif; */
-
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  color: rgb(22, 224, 0);
+  text-shadow:
+    0 0 10px rgba(22, 224, 0, 0.7),
+    0 0 20px rgba(22, 224, 0, 0.4);
+  pointer-events: none;
+  user-select: none;
 }
+.v-letter {
+  left: 0;
+  transform: translateX(-13px);
+}
+
+.x-letter {
+  right: 0;
+  transform: translateX(9px) rotateZ(9deg);
+}
+
+
 }
 
 @media (max-width: 768px) {
@@ -201,7 +217,8 @@
     font-size: 100px;
     margin-top:300px;
   }
-   .x-letter {
+   .x-letter,
+   .v-letter {
   font-size: 160px;
   /* font-family: 'Orbitron', sans-serif; */
 
@@ -264,6 +281,16 @@
   
   border-radius: 10px;
 }
+.v-letter {
+  left: 0;
+  transform: translateX(-12px);
+}
+
+.x-letter {
+  right: 0;
+  transform: translateX(9px) rotateZ(9deg);
+}
+
 }
 @media (max-width: 360px) {
   .Vexurex {
@@ -288,11 +315,22 @@
   .zBox {
     margin-top: 150px;
   }
-   .x-letter {
+   .x-letter,
+   .v-letter {
   font-size: 160px;
   /* font-family: 'Orbitron', sans-serif; */
 
 }
+.v-letter {
+  left: 0;
+  transform: translateX(-13px);
+}
+
+.x-letter {
+  right: 0;
+  transform: translateX(2px) rotateZ(9deg);
+}
+
 
 }
 @media (max-width: 480px) {
@@ -305,9 +343,9 @@
     font-size: 70px;
   }
 
-  .v-letter {
+  .v-letter,
+  .x-letter {
     font-size: 80px;
-    padding: 10px 20px;
   }
 
   .discriptionsText {
@@ -372,11 +410,22 @@
   
   border-radius: 10px;
 }
- .x-letter {
+ .x-letter,
+ .v-letter {
   font-size: 160px;
   /* font-family: 'Orbitron', sans-serif; */
 
 }
+.v-letter {
+  left: 0;
+  transform: translateX(-13px);
+}
+
+.x-letter {
+  right: 0;
+  transform: translateX(-40px) rotateZ(9deg);
+}
+
 }
 
 .main-one {
