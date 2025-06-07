@@ -1,6 +1,7 @@
 // src/components/HowItWorks.tsx
 import React from 'react';
 import '../css/HowItWorks.css';
+import GoogleAd from './GoogleAd';
 
 const steps = [
   {
@@ -53,6 +54,7 @@ export const HowItWorks: React.FC = () => {
           ))}
         </div>
       </div>
+      <GoogleAd slot="1234567890" />
     </section>
   );
 };
