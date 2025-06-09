@@ -1,7 +1,6 @@
 // src/components/HowItWorks.tsx
 import React from 'react';
 import '../css/HowItWorks.css';
-import GoogleAd from './GoogleAd';
 
 const steps = [
   {
@@ -22,7 +21,7 @@ const steps = [
 ];
 
 const platforms = [
-  { name: 'Web Wallet', icon: '🌐' },
+  { name: 'Web Wallet', icon: '🌐'  },
   { name: 'Mobile App', icon: '📱' },
   { name: 'Desktop Wallet', icon: '💻' },
   { name: 'Hardware Wallets', icon: '🔒' }
@@ -44,9 +43,9 @@ export const HowItWorks: React.FC = () => {
       </div>
 
       <div className="platforms-container">
-        <h3>Supported Platforms</h3>
+        <h3>Supported Platforms </h3>
         <div className="platforms-list">
-          {platforms.map(({ name, icon }, index) => (
+          {platforms.map(({ name, icon}, index) => (
             <div key={index} className="platform-card" title={name}>
               <span className="platform-icon">{icon}</span>
               <span className="platform-name">{name}</span>
@@ -54,7 +53,6 @@ export const HowItWorks: React.FC = () => {
           ))}
         </div>
       </div>
-      <GoogleAd slot="1234567890" />
     </section>
   );
 };
