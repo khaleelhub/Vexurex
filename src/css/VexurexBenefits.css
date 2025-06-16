@@ -1,7 +1,7 @@
 /* src/components/ZenthiumBenefits.css */
 
 :root {
-  --primary-color: #00be49;
+  --primary-color: #00b144;
   --bg-light: #f5f7fa;
   --bg-dark: #1a1a1a;
   --text-light: #ffffff;
@@ -13,7 +13,7 @@
 
 /* Main Section Container */
 .benefits-section {
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   background: var(--bg-light);
   text-align: center;
   transition: background 0.3s ease;
